@@ -55,8 +55,8 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 140px;
-    height: 140px;
+    width: 150px;
+    height: 150px;
     background: 	SteelBlue;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.216);
     border-radius: 50%;
@@ -113,6 +113,7 @@ body {
 .section-main img {
     width: 100%;
     height: auto;
+    margin-top: -140px;
 }
 .overlay-text {
     position: absolute;
@@ -122,6 +123,7 @@ body {
     text-align: center;
     color: white;
     text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+    margin-top: -45px;
   }
   
   .overlay-text h1 {
@@ -147,7 +149,7 @@ body {
     position: absolute;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
     margin: 0;
     font-family: var(--font-1);
     font-weight: 400;
@@ -155,7 +157,7 @@ body {
     font-size: 70px;
     white-space: nowrap;
     margin-top: -150px;
-    background: linear-gradient(to right, #b29a68, #d4af37, #ffd700, #d4af37, #b29a68);
+    background: linear-gradient(to right, #ffd700, #d4af37, #ffd700, #d4af37, #ffd700);
     -webkit-background-clip: text;
     color: transparent;
     animation: shine 1.5s infinite linear;
@@ -620,4 +622,142 @@ footer {
     transform: translateY(0);
 }
 
+/* ===========================
+   BUENOS DESEOS – ESTILO TWO DESIGN
+   =========================== */
+
+   .section-wishes {
+    padding: 20px;
+    background-color: #fffbf7;
+    border-radius: 10px;
+    margin-top: 20px;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+.section-wishes h2 {
+    font-family: var(--font-1);
+    font-size: 45px;
+    font-style: italic;
+    font-weight: 400;
+    margin-top: 10px;
+
+    background: linear-gradient(to right, #b29a68, #d4af37, #ffd700, #d4af37, #b29a68);
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: shine 1.5s infinite linear;
+}
+
+.section-wishes p {
+    font-family: var(--font-2);
+    font-size: 20px;
+    font-style: italic;
+    color: steelblue;
+    margin-bottom: 15px;
+}
+
+/* Botones */
+.wish-btn {
+    padding: 10px 20px;
+    background-color: lightsteelblue;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-family: var(--font-2);
+    font-size: 1.2em;
+    font-style: italic;
+    margin: 10px 5px;
+    transition: background-color 0.3s;
+}
+
+.wish-btn:hover {
+    background-color: steelblue;
+}
+
+/* Contenedor de los mensajes */
+#wishes-container {
+    margin-top: 20px;
+    background: rgba(192, 223, 248, 0.18);
+    padding: 15px;
+    border-radius: 12px;
+    max-height: 320px;
+    overflow-y: auto;
+    border: 1px solid rgba(70,130,180,0.25);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+}
+
+/* Cada mensaje */
+.wish-item {
+    background: white;
+    border-radius: 10px;
+    padding: 12px;
+    margin-bottom: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+    border-left: 4px solid steelblue;
+}
+
+.wish-item h4 {
+    margin: 0;
+    font-family: var(--font-2);
+    font-size: 22px;
+    font-style: italic;
+    color: steelblue;
+}
+
+.wish-item p {
+    margin-top: 5px;
+    font-family: var(--font-2);
+    font-size: 20px;
+    color: steelblue;
+}
+
+/* Formulario */
+#wish-form {
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 12px;
+    border: 1px solid rgba(70,130,180,0.25);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+}
+
+.wish-form input,
+.wish-form textarea {
+    width: 90%;
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #b0c4de;
+    margin-bottom: 12px;
+    font-family: var(--font-2);
+    font-size: 18px;
+    font-style: italic;
+    color: steelblue;
+}
+
+.wish-form textarea {
+    height: 120px;
+    resize: none;
+}
+
+/* Ocultos */
+.hidden {
+    display: none;
+}
+
+/* Responsive (iPad y Laptop ya usan tus reglas generales) */
+@media (min-width: 1025px) {
+    #wishes-container {
+        max-height: 450px;
+    }
+    .wish-item h4 {
+        font-size: 26px;
+    }
+    .wish-item p {
+        font-size: 22px;
+    }
+    .wish-form input,
+    .wish-form textarea {
+        font-size: 22px;
+    }
+}
 

@@ -13,22 +13,24 @@ document.addEventListener("DOMContentLoaded", () => {
   const guest   = window.guests.find(g => g.id === guestId);
 
   if (guest) {
-    const invitText = guest.passes > 1
-      ? `¡${guest.name}, están invitados!`
-      : `¡${guest.name}, estás invitado!`;
+    const invitText =
+      guest.passes > 1
+        ? `¡${guest.name}, están invitados!`
+        : `¡${guest.name}, estás invitado!`;
 
-    document.getElementById("nombreInvitado").textContent   = invitText;
-    document.getElementById("cantidadPases").textContent   =
+    document.getElementById("nombreInvitado").textContent = invitText;
+    document.getElementById("cantidadPases").textContent =
       `${guest.passes} ${guest.passes === 1 ? "pase" : "pases"}`;
-
-    // Abrir invitación automáticamente
-    if (typeof abrirInvitacion === "function") abrirInvitacion();
   } else {
-    // Si no existe el invitado, ocultar la invitación completa
-    const invitacion = document.getElementById("invitacion");
-    if (invitacion) invitacion.style.display = "none";
+    // Si el invitado NO existe, opcional: esconder invitación
+    // document.getElementById("invitacion").style.display = "none";
   }
+
+  // ❌ IMPORTANTE:
+  // Aquí NO debe ir abrirInvitacion() ni tocar el sobre.
+  // El usuario debe abrirlo manualmente con un clic.
 });
+
 
 
   

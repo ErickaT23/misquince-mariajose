@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
   
   // 2. Contador regresivo hasta la fecha del evento
   function iniciarContador() {
-    const fechaEvento = new Date('August 02, 2026 00:00:00').getTime();
+    const fechaEvento = new Date('December 6, 2025 015:50:00').getTime();
     setInterval(() => {
       const ahora     = Date.now();
       const diff      = fechaEvento - ahora;
@@ -92,15 +92,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const nombre = nombreElem?.innerText || '';
     const pases  = pasesElem?.innerText.replace('Pases: ', '') || '';
     const msg    = `Hola, soy ${nombre} y confirmo mi asistencia con ${pases} pases para la fiesta de quince años.`;
-    window.open(`https://api.whatsapp.com/send?phone=50236011737&text=${encodeURIComponent(msg)}`, '_blank');
+    window.open(`https://api.whatsapp.com/send?phone=50242141166&text=${encodeURIComponent(msg)}`, '_blank');
   }
   
   function elegirAplicacion() {
-    window.open('https://maps.app.goo.gl/ngvZ8P1KsVggQqAJ6','_blank');
-    setTimeout(() => window.open('https://www.waze.com/en/live-map/directions/iglesia-yurrita-ruta-6-zona-4,-guatemala?place=w.176619666.1766065590.408410','_blank'),1000);
+    window.open('https://maps.app.goo.gl/UARTNvgyZBgtxbVv8','_blank');
+    setTimeout(() => window.open('https://www.waze.com/en/live-map/directions/gt/guatemala/guate/monte-san-francisco?place=ChIJfek-91ajiYURAe3w_7H_AP8','_blank'),1000);
   }
   function elegirAplicacionOtraDireccion() {
-    window.open('https://maps.app.goo.gl/x1VEyzHxdwP7FMkX6','_blank');
-    setTimeout(() => window.open('https://ul.waze.com/ul?venue_id=176619666.1766065588.2060019','_blank'),1000);
+    window.open('https://maps.app.goo.gl/eGW8k9zmtJTK9Gmu9','_blank');
+    setTimeout(() => window.open('https://www.waze.com/en/live-map/directions/gt/guatemala/guatemala/portal-del-angel-*-carretera-a-el-salvador?place=ChIJ69cHS6yjiYURZ4edjg4I9f8','_blank'),1000);
   }
   
