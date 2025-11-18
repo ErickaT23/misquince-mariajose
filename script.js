@@ -62,7 +62,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (invitado) {
       document.getElementById('nombreInvitado').innerText   = invitado.name;
       document.getElementById('cantidadPases').innerText    = `Pases: ${invitado.passes}`;
-      document.getElementById('mesaAsignada').innerText     = `Su mesa asignada es la ${invitado.mesa}`;
     } else {
       console.warn(`Invitado con id=${id} no encontrado`);
     }

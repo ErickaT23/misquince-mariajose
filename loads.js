@@ -2,12 +2,12 @@
 
 // Hacer disponible el array en window para script.js
 window.guests = [
-  { id: "1", name: "Abuelitos", passes: 2, mesa: 1 },
-  { id: "2", name: "Abuelita", passes: 1, mesa: 1 },
-  { id: "3", name: "Flor De María Santos", passes: 1, mesa: 4 },
-  { id: "4", name: "Ángel Santos Y Fam", passes: 3, mesa: 1 },
-  { id: "5", name: "Ileana Arriola", passes: 4, mesa: 1 },
-  { id: "6", name: "Juan Benavente Y Esposa", passes: 2, mesa: 2 },
+  { id: "1", name: "Abuelitos", passes: 2},
+  { id: "2", name: "Abuelita", passes: 1},
+  { id: "3", name: "Flor De María Santos", passes: 1},
+  { id: "4", name: "Ángel Santos Y Fam", passes: 3},
+  { id: "5", name: "Ileana Arriola", passes: 4},
+  { id: "6", name: "Juan Benavente Y Esposa", passes: 2},
   // ...resto de invitados
 ];
 
