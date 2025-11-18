@@ -113,7 +113,6 @@ body {
 .section-main img {
     width: 100%;
     height: auto;
-    margin-top: -140px;
 }
 .overlay-text {
     position: absolute;
@@ -123,7 +122,7 @@ body {
     text-align: center;
     color: white;
     text-shadow: 0 2px 4px rgba(0,0,0,0.6);
-    margin-top: -45px;
+    margin-top: -30px;
   }
   
   .overlay-text h1 {
@@ -135,7 +134,7 @@ body {
     font-family: var(--font-1);
     font-weight: 400;
     font-style: italic;
-    font-size: 60px;
+    font-size: 40px;
     white-space: nowrap;
     margin-top: -200px;
     background: linear-gradient(to right, #b29a68, #d4af37, #ffd700, #d4af37, #b29a68);
@@ -154,7 +153,7 @@ body {
     font-family: var(--font-1);
     font-weight: 400;
     font-style: italic;
-    font-size: 70px;
+    font-size: 60px;
     white-space: nowrap;
     margin-top: -150px;
     background: linear-gradient(to right, #ffd700, #d4af37, #ffd700, #d4af37, #ffd700);
@@ -372,7 +371,7 @@ body {
     font-family: var(--font-2);
     font-style: italic;
     font-weight: 400;
-    font-size: 28px;
+    font-size: 24px;
     color: steelblue;
 }
 .section-b h1, .section-b h2, .section-b h3{

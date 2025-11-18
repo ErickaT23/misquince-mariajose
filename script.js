@@ -11,17 +11,28 @@ document.addEventListener('DOMContentLoaded', () => {
   
   // 1. Función para abrir la invitación y reproducir música
   function abrirInvitacion() {
-    const envelope   = document.getElementById('envelope');
+    const envelope = document.getElementById('envelope');
     const invitacion = document.getElementById('invitacion');
+    const musica = document.getElementById('musica');
+  
     if (!envelope || !invitacion) return;
   
     envelope.classList.add('open');
+  
     setTimeout(() => {
-      envelope.style.display   = 'none';
+      envelope.style.display = 'none';
       invitacion.style.display = 'block';
-      document.getElementById('musica')?.play();
+  
+      // Intentar reproducir música SOLO después del click
+      if (musica) {
+        musica.play().catch(error => {
+          console.warn("No se pudo reproducir automáticamente la música:", error);
+        });
+      }
+  
     }, 1000);
   }
+  
   
   // 2. Contador regresivo hasta la fecha del evento
   function iniciarContador() {
