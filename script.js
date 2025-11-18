@@ -58,16 +58,19 @@ document.addEventListener('DOMContentLoaded', () => {
     const id     = params.get('id');
     if (!id) return;
   
-    // `guests` viene de loads.js
     const invitado = window.guests?.find(g => g.id === id);
     if (invitado) {
       document.getElementById('nombreInvitado').innerText  = invitado.name;
-      document.getElementById('cantidadPases').innerText  = `Pases: ${invitado.passes}`;
-      abrirInvitacion();
+      document.getElementById('cantidadPases').innerText   = `Pases: ${invitado.passes}`;
+      
+      // ✅ Ya no se abre automáticamente, se espera el clic
+      // ❌ eliminar o comentar esta línea:
+      // abrirInvitacion();
     } else {
       console.warn(`Invitado con id=${id} no encontrado`);
     }
   }
+  
   
   // 4. Observer para efecto fade-in al hacer scroll
   function initFadeInObserver() {
