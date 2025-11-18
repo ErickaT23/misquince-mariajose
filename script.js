@@ -97,14 +97,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   }
   
-  function confirmarAsistencia() {
-    const nombreElem = document.getElementById('nombreInvitado');
-    const pasesElem  = document.getElementById('cantidadPases');
-    const nombre = nombreElem?.innerText || '';
-    const pases  = pasesElem?.innerText.replace('Pases: ', '') || '';
-    const msg    = `Hola, soy ${nombre} y confirmo mi asistencia con ${pases} pases para la fiesta de quince años.`;
-    window.open(`https://api.whatsapp.com/send?phone=50242141166&text=${encodeURIComponent(msg)}`, '_blank');
-  }
   
   function elegirAplicacion() {
     window.open('https://maps.app.goo.gl/kGuyYkPWXxMyR2jPA', '_blank');
@@ -112,6 +104,25 @@ document.addEventListener('DOMContentLoaded', () => {
   
   function elegirAplicacionOtraDireccion() {
     window.open('https://maps.app.goo.gl/eGW8k9zmtJTK9Gmu9', '_blank');
+  }
+  
+  function confirmarAsistencia() {
+    const nombreElem = document.getElementById('nombreInvitado');
+    const pasesElem  = document.getElementById('cantidadPases');
+  
+    const nombre = nombreElem?.innerText || '';
+    const pasesTexto = pasesElem?.innerText || '';
+    const cantidad = parseInt(pasesTexto.replace(/\D/g, '')) || 0;
+  
+    let msg = "";
+  
+    if (cantidad === 1) {
+      msg = `Gracias por la invitación a los quince de María José, confirmo mi asistencia con ${cantidad} pase reservado. Nos vemos pronto, ${nombre}`;
+    } else {
+      msg = `Gracias por la invitación a los quince de María José, confirmamos nuestra asistencia con nuestros ${cantidad} pases reservados. Nos vemos pronto, ${nombre}`;
+    }
+  
+    window.open(`https://api.whatsapp.com/send?phone=50242141166&text=${encodeURIComponent(msg)}`, '_blank');
   }
   
   
