@@ -107,7 +107,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   
   function elegirAplicacion() {
-    window.open('https://maps.app.goo.gl/UARTNvgyZBgtxbVv8', '_blank');
+    window.open('https://maps.app.goo.gl/kGuyYkPWXxMyR2jPA', '_blank');
   }
   
   function elegirAplicacionOtraDireccion() {
