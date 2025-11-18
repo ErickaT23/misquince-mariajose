@@ -389,7 +389,6 @@ body {
 }
 .section h2, .section-playlist h2, .section-gifts h2, .section h3, .section-filter h2, .section-filter h3{
     font-family: var(--font-1);
-    padding: 10px;
     font-weight: 400;
     font-style: italic;
     font-size: 40px;

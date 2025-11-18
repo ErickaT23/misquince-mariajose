@@ -107,11 +107,11 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   
   function elegirAplicacion() {
-    window.open('https://maps.app.goo.gl/UARTNvgyZBgtxbVv8','_blank');
-    setTimeout(() => window.open('https://www.waze.com/en/live-map/directions/gt/guatemala/guate/monte-san-francisco?place=ChIJfek-91ajiYURAe3w_7H_AP8','_blank'),1000);
+    window.open('https://maps.app.goo.gl/UARTNvgyZBgtxbVv8', '_blank');
   }
+  
   function elegirAplicacionOtraDireccion() {
-    window.open('https://maps.app.goo.gl/eGW8k9zmtJTK9Gmu9','_blank');
-    setTimeout(() => window.open('https://www.waze.com/en/live-map/directions/gt/guatemala/guatemala/portal-del-angel-*-carretera-a-el-salvador?place=ChIJ69cHS6yjiYURZ4edjg4I9f8','_blank'),1000);
+    window.open('https://maps.app.goo.gl/eGW8k9zmtJTK9Gmu9', '_blank');
   }
+  
   
