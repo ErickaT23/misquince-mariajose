@@ -60,17 +60,14 @@ document.addEventListener('DOMContentLoaded', () => {
   
     const invitado = window.guests?.find(g => g.id === id);
     if (invitado) {
-      document.getElementById('nombreInvitado').innerText  = invitado.name;
-      document.getElementById('cantidadPases').innerText   = `Pases: ${invitado.passes}`;
-      
-      // ✅ Ya no se abre automáticamente, se espera el clic
-      // ❌ eliminar o comentar esta línea:
-      // abrirInvitacion();
+      document.getElementById('nombreInvitado').innerText   = invitado.name;
+      document.getElementById('cantidadPases').innerText    = `Pases: ${invitado.passes}`;
+      document.getElementById('mesaAsignada').innerText     = `Tu mesa asignada es la ${invitado.mesa}`;
     } else {
       console.warn(`Invitado con id=${id} no encontrado`);
     }
   }
-  
+
   
   // 4. Observer para efecto fade-in al hacer scroll
   function initFadeInObserver() {

@@ -2,10 +2,11 @@
 
 // Hacer disponible el array en window para script.js
 window.guests = [
-  { id: "1", name: "Anabella & Leandro", passes: 2 },
-  { id: "2", name: "Macarena & Rogelio",   passes: 2 },
-  // … resto de invitados
+  { id: "1", name: "Anabella & Leandro", passes: 2, mesa: 5 },
+  { id: "2", name: "Macarena & Rogelio", passes: 2, mesa: 3 },
+  // …
 ];
+
 
 document.addEventListener("DOMContentLoaded", () => {
   const params  = new URLSearchParams(window.location.search);
