@@ -43,7 +43,9 @@ window.guests = [
   { id: "39", name: "Letia Rodríguez", passes: 1 },
   { id: "40", name: "Elizabeth Del Valle", passes: 1 },
   { id: "41", name: "Dania Montoya", passes: 1 },
-  { id: "42", name: "Rosario Gómez", passes: 1 }
+  { id: "42", name: "Rosario Gómez", passes: 1 },
+  { id: "43", name: "Fernanda Castilla", passes: 2 },
+  { id: "44", name: "Marbella Cano", passes: 1 }
 ];
 
 
